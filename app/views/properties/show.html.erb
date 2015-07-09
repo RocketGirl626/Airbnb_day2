@@ -1,10 +1,12 @@
-<%= link_to "Edit Property", edit_property_path(@property) %>  |
-<%= link_to "Delete Property", property_path(@property),
+
+<% if current_user && current_user.admin? %>
+  <%= link_to "Edit Property", edit_property_path(@property) %>  |
+  <%= link_to "Delete Property", property_path(@property),
                                 :data => {:confirm => "Are you sure?",
                                           :method => 'delete'}%>  |
-
-<%= link_to "Add a review", new_property_review_path(@property, @review) %>
-
+<% else %>
+  <%= link_to "Add a review", new_property_review_path(@property, @review) %>
+<% end %>
 
 <h2><%= @property.name %></h2>
 <h5>Posted by: <%= @property.user.email %></h5>

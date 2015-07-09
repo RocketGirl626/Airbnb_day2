@@ -41,14 +41,9 @@ class ReviewsController < ApplicationController
  def destroy
    @property = Property.find(params[:property_id])
    @review = Review.find(params[:id])
-   if current_user.admin?
-     @review.destroy
-     flash[:notice] = 'Deleted successfully'
-     redirect_to property_path(@property)
-   else
-     flash[:notice] = "You don't have admin privileges."
-     redirect_to property_path(@property)
-   end
+   @review.destroy
+   flash[:notice] = 'Deleted successfully'
+   redirect_to property_path(@property)
  end
 
 

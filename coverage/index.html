@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-07-09T11:06:03-07:00">2015-07-09T11:06:03-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-07-09T13:47:00-07:00">2015-07-09T13:47:00-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">95.36%</span></span>
+    (<span class="covered_percent"><span class="green">97.83%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.22
+         1.29
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>32</b> files in total.
-    <b>280</b> relevant lines. 
-    <span class="green"><b>267</b> lines covered</span> and
-    <span class="red"><b>13</b> lines missed </span>
+    <b>34</b> files in total.
+    <b>323</b> relevant lines. 
+    <span class="green"><b>316</b> lines covered</span> and
+    <span class="red"><b>7</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -62,22 +62,22 @@
       
       <tr>
         <td class="strong"><a href="#712001ebebcfe606da0b81c91a6cb529a1e26d14" class="src_link" title="app/controllers/properties_controller.rb">app/controllers/properties_controller.rb</a></td>
-        <td class="red strong">64.52 %</td>
+        <td class="green strong">93.55 %</td>
         <td>53</td>
         <td>31</td>
-        <td>20</td>
-        <td>11</td>
-        <td>2.1</td>
+        <td>29</td>
+        <td>2</td>
+        <td>3.2</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#05cbae5dc1d0e605081baf55cf19952763aff5fb" class="src_link" title="app/controllers/reviews_controller.rb">app/controllers/reviews_controller.rb</a></td>
-        <td class="green strong">94.29 %</td>
-        <td>55</td>
-        <td>35</td>
+        <td class="yellow strong">86.84 %</td>
+        <td>60</td>
+        <td>38</td>
         <td>33</td>
-        <td>2</td>
-        <td>1.5</td>
+        <td>5</td>
+        <td>1.4</td>
       </tr>
       
       <tr>
@@ -113,7 +113,7 @@
       <tr>
         <td class="strong"><a href="#db4e144565d1d33b576d63eafbe74aa2a10ad6c4" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>9</td>
+        <td>11</td>
         <td>4</td>
         <td>4</td>
         <td>0</td>
@@ -253,7 +253,7 @@
       <tr>
         <td class="strong"><a href="#bea2a7f3a8eec46f5c1ce708e07a818790dbc6d1" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>14</td>
+        <td>15</td>
         <td>5</td>
         <td>5</td>
         <td>0</td>
@@ -291,11 +291,31 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#95cb2a861d016146c99b7634be710de6f9a9d319" class="src_link" title="spec/features/delete_property_spec.rb">spec/features/delete_property_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>25</td>
+        <td>19</td>
+        <td>19</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#cdba0d3ba1459c90438d6fba7d2fd74e856f5420" class="src_link" title="spec/features/delete_review_spec.rb">spec/features/delete_review_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>29</td>
         <td>24</td>
         <td>24</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#8b0d243c77a3510b342d5030503dd1bb87d7b3f7" class="src_link" title="spec/features/edit_property_spec.rb">spec/features/edit_property_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>27</td>
+        <td>21</td>
+        <td>21</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -443,11 +463,11 @@
         <div class="source_table" id="712001ebebcfe606da0b81c91a6cb529a1e26d14">
   <div class="header">
     <h3>app/controllers/properties_controller.rb</h3>
-    <h4><span class="red">64.52 %</span> covered</h4>
+    <h4><span class="green">93.55 %</span> covered</h4>
     <div>
       <b>31</b> relevant lines. 
-      <span class="green"><b>20</b> lines covered</span> and
-      <span class="red"><b>11</b> lines missed.</span>
+      <span class="green"><b>29</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -472,8 +492,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="17" data-linenumber="4">
-          <span class="hits">17</span>
+        <li class="covered" data-hits="24" data-linenumber="4">
+          <span class="hits">24</span>
           
           <code class="ruby">    @properties = Property.all</code>
         </li>
@@ -496,8 +516,8 @@
           <code class="ruby">  def new</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="8">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="8">
+          <span class="hits">6</span>
           
           <code class="ruby">    @property = Property.new</code>
         </li>
@@ -520,32 +540,32 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="12">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="12">
+          <span class="hits">6</span>
           
           <code class="ruby">    @user = current_user</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="13">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="13">
+          <span class="hits">6</span>
           
           <code class="ruby">    @property = @user.properties.new(property_params)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="14">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="14">
+          <span class="hits">6</span>
           
           <code class="ruby">    if @property.save</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="15">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="15">
+          <span class="hits">6</span>
           
           <code class="ruby">      flash[:notice] = &quot;Property saved!&quot;</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="16">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="6" data-linenumber="16">
+          <span class="hits">6</span>
           
           <code class="ruby">      redirect_to properties_path</code>
         </li>
@@ -586,8 +606,8 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="23">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="11" data-linenumber="23">
+          <span class="hits">11</span>
           
           <code class="ruby">     @property = Property.find(params[:id])</code>
         </li>
@@ -610,8 +630,8 @@
           <code class="ruby">  def edit</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="27">
-          
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
           
           <code class="ruby">    @property = Property.find(params[:id])</code>
         </li>
@@ -634,26 +654,26 @@
           <code class="ruby">  def update</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="31">
-          
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
           
           <code class="ruby">     @property = Property.find(params[:id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="32">
-          
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
           
           <code class="ruby">     if @property.update(property_params)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="33">
-          
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
           
           <code class="ruby">       flash[:notice] = &quot;Your property has been updated.&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="34">
-          
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
           
           <code class="ruby">       redirect_to property_path(@property)</code>
         </li>
@@ -694,26 +714,26 @@
           <code class="ruby">   def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="41">
-          
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
           
           <code class="ruby">     @property = Property.find(params[:id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="42">
-          
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
           
           <code class="ruby">     @property.destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="43">
-          
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
           
           <code class="ruby">     flash[:notice] = &quot;Your property has been deleted.&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="44">
-          
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
           
           <code class="ruby">     redirect_to properties_path()</code>
         </li>
@@ -748,8 +768,8 @@
           <code class="ruby">  def property_params</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="50">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="7" data-linenumber="50">
+          <span class="hits">7</span>
           
           <code class="ruby">    params.require(:property).permit(:name, :description)</code>
         </li>
@@ -779,11 +799,11 @@
         <div class="source_table" id="05cbae5dc1d0e605081baf55cf19952763aff5fb">
   <div class="header">
     <h3>app/controllers/reviews_controller.rb</h3>
-    <h4><span class="green">94.29 %</span> covered</h4>
+    <h4><span class="yellow">86.84 %</span> covered</h4>
     <div>
-      <b>35</b> relevant lines. 
+      <b>38</b> relevant lines. 
       <span class="green"><b>33</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <span class="red"><b>5</b> lines missed.</span>
     </div>
   </div>
   
@@ -1051,70 +1071,100 @@
         <li class="covered" data-hits="1" data-linenumber="44">
           <span class="hits">1</span>
           
-          <code class="ruby">   @review.destroy</code>
+          <code class="ruby">   if current_user.admin?</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="45">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="45">
           
-          <code class="ruby">   flash[:notice] = &#39;Deleted successfully&#39;</code>
+          
+          <code class="ruby">     @review.destroy</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="46">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="46">
           
-          <code class="ruby">   redirect_to property_path(@property)</code>
+          
+          <code class="ruby">     flash[:notice] = &#39;Deleted successfully&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="47">
+        <li class="missed" data-hits="0" data-linenumber="47">
           
           
-          <code class="ruby"> end</code>
+          <code class="ruby">     redirect_to property_path(@property)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">   else</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="49">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="50">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="51">
+        <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
-          <code class="ruby"> private</code>
+          <code class="ruby">     flash[:notice] = &quot;You don&#39;t have admin privileges.&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="52">
+        <li class="covered" data-hits="1" data-linenumber="50">
           <span class="hits">1</span>
           
-          <code class="ruby">   def review_params</code>
+          <code class="ruby">     redirect_to property_path(@property)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="53">
-          <span class="hits">4</span>
-          
-          <code class="ruby">     params.require(:review).permit(:text)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="54">
+        <li class="never" data-hits="" data-linenumber="51">
           
           
           <code class="ruby">   end</code>
         </li>
       
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby"> end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby"> private</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   def review_params</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="58">
+          <span class="hits">4</span>
+          
+          <code class="ruby">     params.require(:review).permit(:text)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
           
           
           <code class="ruby">end</code>
@@ -1349,6 +1399,18 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">end</code>
@@ -4054,64 +4116,64 @@
           <code class="ruby">  devise_for :users</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
           <code class="ruby">  get &#39;/&#39; =&gt; &#39;properties#index&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="5">
           
           
-          <code class="ruby">  # resources :users do</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
           
           
-          <code class="ruby">  #   resources :properties</code>
+          <code class="ruby">  # resources :users do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby">  # end</code>
+          <code class="ruby">  #   resources :properties</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  # end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="9">
           
-          <code class="ruby">  resources :properties do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">    resources :reviews</code>
+          <code class="ruby">  resources :properties do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    resources :reviews</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
@@ -4121,6 +4183,12 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">end</code>
@@ -4502,6 +4570,174 @@
   </pre>
 </div>
       
+        <div class="source_table" id="95cb2a861d016146c99b7634be710de6f9a9d319">
+  <div class="header">
+    <h3>spec/features/delete_property_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>19</b> relevant lines. 
+      <span class="green"><b>19</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;rails_helper&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;Delete property&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;allows a user to delete a property&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    user = FactoryGirl.create(:user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit &quot;/&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(&quot;Login&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_link &quot;Login&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Email&#39;, :with =&gt; &#39;test@example.com&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Password&#39;, :with =&gt; &#39;f4k3p455w0rd&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Log in&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(&quot;Signed in successfully&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Add a New Property&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Name&#39;, :with =&gt; &#39;my house&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Description&#39;, :with =&gt; &#39;this is a great house&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Create Property&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(&quot;my house&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;my house&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Delete Property&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(&#39;Your property has been deleted&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
         <div class="source_table" id="cdba0d3ba1459c90438d6fba7d2fd74e856f5420">
   <div class="header">
     <h3>spec/features/delete_review_spec.rb</h3>
@@ -4685,6 +4921,186 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="8b0d243c77a3510b342d5030503dd1bb87d7b3f7">
+  <div class="header">
+    <h3>spec/features/edit_property_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>21</b> relevant lines. 
+      <span class="green"><b>21</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &quot;rails_helper&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;Edit property&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;allows a user to edit a property&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    user = FactoryGirl.create(:user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit &quot;/&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(&quot;Login&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_link &quot;Login&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Email&#39;, :with =&gt; &#39;test@example.com&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Password&#39;, :with =&gt; &#39;f4k3p455w0rd&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Log in&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(&quot;Signed in successfully&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Add a New Property&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Name&#39;, :with =&gt; &#39;my house&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Description&#39;, :with =&gt; &#39;this is a great house&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Create Property&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(&quot;my house&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;my house&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Edit Property&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Name&#39;, :with =&gt; &#39;your new home&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Update Property&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content(&#39;your new home&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
           
           
           <code class="ruby">end</code>
