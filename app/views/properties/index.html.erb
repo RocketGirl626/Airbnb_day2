@@ -1,0 +1,12 @@
+<h2>Properties</h2>
+
+
+<% if @properties.any? %>
+   <ul>
+     <% @properties.each do |property| %>
+       <li><%= link_to property.name, property_path(property) %></li>
+     <% end %>
+   </ul>
+<% else %>
+   <p><h3>No Properties Currently in Index</h3></p>
+ <% end %>

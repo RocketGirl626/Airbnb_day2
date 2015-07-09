@@ -1,0 +1,19 @@
+<h1><%= @property.name %></h1>
+
+<h3><%= @property.description %></h3>
+
+
+    <%= link_to "Edit Question", edit_property_path(@property) %>
+    <%= link_to "Delete Question", property_path(@property),
+                                    :data => {:confirm => "Are you sure?",
+                                              :method => 'delete'}%>
+
+  <%= link_to "Add a review", new_property_review_path(@property, @review) %>
+
+  <ul>
+    <% @property.reviews.each do |review| %>
+      <li><%= review.text %> -- <small><%= review.user.email %></small>
+      </li>
+      <hr>
+    <% end %>
+  </ul>
