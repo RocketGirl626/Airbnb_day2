@@ -54,10 +54,11 @@
       <%= content_tag :div, msg, id: "flash_#{name}" %>
     <% end %> -->
 
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+
 
       <div class="col-sm-6 col-sm-offset-3">
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
         <%= yield %>
       </div>
 

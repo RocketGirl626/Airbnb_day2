@@ -1,18 +1,21 @@
-<h1><%= @property.name %></h1>
+<%= link_to "Edit Property", edit_property_path(@property) %>  |
+<%= link_to "Delete Property", property_path(@property),
+                                :data => {:confirm => "Are you sure?",
+                                          :method => 'delete'}%>  |
 
-<h3><%= @property.description %></h3>
-
-<h4>Posted by: <%= @property.user.email %></h4>
+<%= link_to "Add a review", new_property_review_path(@property, @review) %>
 
 
+<h2><%= @property.name %></h2>
+<h5>Posted by: <%= @property.user.email %></h5>
 
-    <%= link_to "Edit Question", edit_property_path(@property) %>
-    <%= link_to "Delete Question", property_path(@property),
-                                    :data => {:confirm => "Are you sure?",
-                                              :method => 'delete'}%>
+<h4><%= @property.description %></h4>
+<br>
 
-  <%= link_to "Add a review", new_property_review_path(@property, @review) %>
+  <% if @property.reviews.any? %>
 
+<h3>Reviews of this property</h3>
+<br>
   <ul>
     <% @property.reviews.each do |review| %>
       <li><%= link_to review.text, property_review_path(@property, review) %> -- <small><%= review.user.email %></small>
@@ -20,3 +23,6 @@
       <hr>
     <% end %>
   </ul>
+  <% else %>
+     <p><h4>There are currently no reviews for this property</h4></p>
+   <% end %>
