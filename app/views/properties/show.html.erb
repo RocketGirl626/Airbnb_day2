@@ -5,7 +5,7 @@
                                 :data => {:confirm => "Are you sure?",
                                           :method => 'delete'}%>  |
 <% end %>
-<% if current_user && current_user.admin? || current_user && !current_user.owner?%>
+<% if current_user && !current_user.owner?%>
   <%= link_to "Add a review", new_property_review_path(@property, @review) %>
 <% end %>
 
