@@ -2,6 +2,9 @@
 
 <h3><%= @property.description %></h3>
 
+<h4>Posted by: <%= @property.user.email %></h4>
+
+
 
     <%= link_to "Edit Question", edit_property_path(@property) %>
     <%= link_to "Delete Question", property_path(@property),
@@ -12,7 +15,7 @@
 
   <ul>
     <% @property.reviews.each do |review| %>
-      <li><%= review.text %> -- <small><%= review.user.email %></small>
+      <li><%= link_to review.text, property_review_path(@property, review) %> -- <small><%= review.user.email %></small>
       </li>
       <hr>
     <% end %>

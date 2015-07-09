@@ -10,7 +10,7 @@ describe "Edit profile" do
     fill_in 'Password', :with => 'f4k3p455w0rd'
     click_on 'Log in'
     expect(page).to have_content("Signed in successfully")
-    click_on 'Edit profile'
+    click_on 'Edit Profile'
     fill_in 'Email', :with => 'ian@ian.com'
     fill_in 'Current password', :with => 'f4k3p455w0rd'
     click_on 'Update'

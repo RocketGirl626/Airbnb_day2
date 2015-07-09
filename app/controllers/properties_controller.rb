@@ -1,5 +1,5 @@
 class PropertiesController < ApplicationController
-  before_filter :authenticate_user!, except: [:index] 
+  before_filter :authenticate_user!, except: [:index]
   def index
     @properties = Property.all
   end
