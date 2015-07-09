@@ -1,8 +1,11 @@
+
+<% if current_user && current_user.admin? || current_user && !current_user.owner?%>
+
 <%= link_to "Edit Review", edit_property_review_path(@property, @review) %>  |
 <%= link_to "Delete Review", property_review_path(@property, @review),
                                 :data => {:confirm => "Are you sure?",
                                           :method => 'delete'}%>
-
+<% end %>
 <h2><%= @review.text %></h2>
 
 <h5>Posted by: <%= @review.user.email %></h5>

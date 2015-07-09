@@ -1,10 +1,11 @@
 
-<% if current_user && current_user.admin? %>
+<% if current_user && current_user.admin? || current_user && current_user.owner?%>
   <%= link_to "Edit Property", edit_property_path(@property) %>  |
   <%= link_to "Delete Property", property_path(@property),
                                 :data => {:confirm => "Are you sure?",
                                           :method => 'delete'}%>  |
-<% else %>
+<% end %>
+<% if current_user && current_user.admin? || current_user && !current_user.owner?%>
   <%= link_to "Add a review", new_property_review_path(@property, @review) %>
 <% end %>
 
